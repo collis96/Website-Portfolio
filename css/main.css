@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+body a {
+    text-align: center;
+}
+
+canvas {
+    display: block;
+}
+
+/* ----
+particles container
+---- */
+
+#particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #36a5be;
+}
+
+/* ----
+navbar
+---- */
+
+#rightnav{
+    float:right;
+}
+
+nav {
+  background-color: rgba(45, 132, 150, 0.644);
+  position: absolute;
+  top:0em;
+  left:0em;
+  right:0em;
+}
+
+nav a {
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  display: block;
+  float: left;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(32, 71, 83);
+}
+
+nav cite {
+  float: right;
+  padding: 14px 16px;
+  font-style: italic;
+  font-size: 15px;
+}
+
+
+@media (max-width: 910px) {
+  nav cite {
+    display: none;
+  }
+}
+
+
+.active {
+  background-color: rgb(255, 255, 255);
+}
+
+/* ----
+content
+---- */
+
+header {
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+#home {
+  background-color: rgba(255, 255, 255, 0);
+  top: 39%;
+  color: white;
+}
+
+#style3 {
+  font-style: cursive;
+}
+
+header article{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+header article a:hover{
+  background-color: rgb(255, 255, 0);
+}
+
+header article a{
+  text-decoration: none;
+  color: rgb(0, 0, 0)
+}
+
+#ref {
+  margin-bottom: 2em
+}
+
+#ref2 {
+  margin-bottom: 0.5em;
+}
+
+#ref3 {
+  margin-top: 0.5em;
+}
+
+/* ----
+main content
+---- */
+
+main {
+  width: 100%;
+  height: auto;
+  padding-top: 2%;
+  background-color: rgb(241, 238, 238);
+  position: absolute;
+  color: black;
+  font-size: 18px;
+}
+
+main article {
+  margin-left: 15%;
+  margin-right: 15%
+}
+
+/* ----
+footer
+---- */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(219, 219, 219, 0.349);
+  text-align: center;
+}
+footer p{
+  float: right;
+}
+img.right {
+  margin-top: 0.4em;
+  float: right;
+  margin-left: 1em;
+}
+
+img#margin {
+  margin-right: 7%;
+}
+
+img.space {
+  margin-left: 3em;
+}
+
+/* ----
+header footer
+---- */
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(45, 132, 150, 0.452);
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.social {
+  width: 2.5em;
+  height: auto;
+  margin-left: 1em;
+}
+
+footer a:hover {
+  background-color: #ffffff00;
+}
