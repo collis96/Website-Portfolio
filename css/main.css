@@ -1,6 +1,11 @@
+html {
+  overflow-y: overlay;
+}
+
 body {
     margin: 0;
     font:normal 75% Arial, Helvetica, sans-serif;
+    background-color: rgba(8, 9, 9, 0.82);
 }
 
 body a {
@@ -19,7 +24,9 @@ particles container
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, #619BFF , blue);
+    background-image: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(42, 201, 151,.8), rgba(42, 201, 151,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 }
 
 /* ----
@@ -27,7 +34,8 @@ navbar
 ---- */
 
 #rightnav{
-    float:right;
+  float:right;
+  margin-right:1%;
 }
 
 nav {
@@ -36,6 +44,7 @@ nav {
   top:0em;
   left:0em;
   right:0em;
+  border-bottom: 1px solid #404040;
 }
 
 nav a {
@@ -59,14 +68,6 @@ nav cite {
   font-size: 15px;
 }
 
-
-@media (max-width: 910px) {
-  nav cite {
-    display: none;
-  }
-}
-
-
 .active {
   background-color: rgb(255, 255, 255);
 }
@@ -81,6 +82,10 @@ header {
   font-size: 18px;
   width: 100%;
   text-align: center;
+}
+
+.spacing {
+  letter-spacing: 0.05em;
 }
 
 #home {
@@ -139,6 +144,11 @@ main article {
   margin-right: 15%
 }
 
+.stroke {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+}
+
 /* ----
 footer
 ---- */
@@ -149,6 +159,7 @@ footer {
   width: 100%;
   background-color: rgba(219, 219, 219, 0.349);
   text-align: center;
+  border-top: 1px solid #404040;
 }
 footer p{
   float: right;
@@ -191,3 +202,4 @@ footer {
 footer a:hover {
   background-color: #ffffff00;
 }
+
