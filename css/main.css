@@ -1,205 +1,96 @@
 html {
-  overflow-y: overlay;
+  overflow-y: overlay
 }
-
 body {
-    margin: 0;
-    font:normal 75% Arial, Helvetica, sans-serif;
-    background-color: rgba(8, 9, 9, 0.82);
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+  background-color: rgba(8, 9, 9, .82)
 }
-
 body a {
-    text-align: center;
+  text-align: center
 }
-
-canvas {
-    display: block;
-}
-
-/* ----
-particles container
----- */
-
 #particles {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(42, 201, 151,.8), rgba(42, 201, 151,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-}
-
-/* ----
-navbar
----- */
-
-#rightnav{
-  float:right;
-  margin-right:1%;
-}
-
-nav {
-  background-color: rgba(45, 132, 150, 0.644);
   position: absolute;
-  top:0em;
-  left:0em;
-  right:0em;
-  border-bottom: 1px solid #404040;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(42, 201, 151, .8), rgba(42, 201, 151, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%)
 }
-
+#rightnav {
+  float: right;
+  margin-right: 1%
+}
+nav {
+  background-color: rgba(45, 132, 150, .644);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #404040
+}
 nav a {
   text-align: center;
   padding: 14px 16px;
   font-size: 17px;
   display: block;
   float: left;
-  color: #ffffff;
-  text-decoration: none;
+  color: #fff;
+  text-decoration: none
 }
-
 a:hover {
-  background-color: rgb(32, 71, 83);
+  background-color: #204753
 }
-
-nav cite {
-  float: right;
-  padding: 14px 16px;
-  font-style: italic;
-  font-size: 15px;
-}
-
-.active {
-  background-color: rgb(255, 255, 255);
-}
-
-/* ----
-content
----- */
-
 header {
   position: absolute;
   left: 0;
   font-size: 18px;
   width: 100%;
-  text-align: center;
+  text-align: center
 }
-
 .spacing {
-  letter-spacing: 0.05em;
+  letter-spacing: .05em
 }
-
 #home {
   background-color: rgba(255, 255, 255, 0);
   top: 39%;
-  color: white;
-  pointer-events: none;
+  color: #fff;
+  pointer-events: none
 }
-
-#style3 {
-  font-style: cursive;
-}
-
-header article{
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-header article a:hover{
-  background-color: rgb(255, 255, 0);
-}
-
-header article a{
-  text-decoration: none;
-  color: rgb(0, 0, 0)
-}
-
-#ref {
-  margin-bottom: 2em
-}
-
-#ref2 {
-  margin-bottom: 0.5em;
-}
-
-#ref3 {
-  margin-top: 0.5em;
-}
-
-/* ----
-main content
----- */
-
 main {
   width: 100%;
   height: auto;
   padding-top: 2%;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   position: absolute;
-  color: black;
-  font-size: 18px;
+  color: #000;
+  font-size: 18px
 }
-
-main article {
-  margin-left: 15%;
-  margin-right: 15%
-}
-
 .stroke {
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
 }
-
-/* ----
-footer
----- */
-
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgba(219, 219, 219, 0.349);
+  background-color: rgba(219, 219, 219, .349);
   text-align: center;
-  border-top: 1px solid #404040;
+  border-top: 1px solid #404040
 }
-footer p{
-  float: right;
-}
-img.right {
-  margin-top: 0.4em;
-  float: right;
-  margin-left: 1em;
-}
-
-img#margin {
-  margin-right: 7%;
-}
-
-img.space {
-  margin-left: 3em;
-}
-
-/* ----
-header footer
----- */
-
 footer {
   position: absolute;
   width: 100%;
   bottom: 0;
-  background-color: rgba(45, 132, 150, 0.452);
-  color: white;
+  background-color: rgba(45, 132, 150, .452);
+  color: #fff;
   padding-top: 8px;
   padding-bottom: 8px;
-  text-align: center;
+  text-align: center
 }
-
 .social {
   width: 2.5em;
   height: auto;
-  margin-left: 1em;
+  margin-left: 1em
 }
-
 footer a:hover {
-  background-color: #ffffff00;
+  background-color: #ffffff00
 }
-
