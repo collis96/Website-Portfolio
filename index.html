@@ -1,46 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title> JC - Technical Projects </title>
-    <meta name="description" content="Projects website.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="icon" href="./res/favicon.png">-->
-    <link rel="stylesheet" href="./css/main.css">
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143416986-1"></script>
-	<script>
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
+	<head>
+		<title> Jack Collis - Projects </title>
+		<meta charset="utf-8">
+		<meta name="description" content="Projects website">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/styles.css">
 
-  	gtag('config', 'UA-143416986-1');
-	</script>
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143416986-1"></script> 
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
 
-   </head>
-   <div id="particles">
-    <script src="./js/particles.js"></script>
-    <script src="./js/app.js"></script>
-    
-    <nav>
-      <b><a href="#">Home</a></b>
-      <a href="./about/about.html">About</a>
-      <a href="./projects/projects.html">Projects</a>
-      <div id="rightnav">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkwtrsPIZnvlHdrF63YzpV8f-0lUpHQDel0ja8e7yEnExKpg/viewform?usp=sf_link">Feedback</a>
-      </div>
-    </nav>
-    <header id="home">
-      <div class="spacing">
-      	<h1 class="stroke">Technical Projects Portfolio</h1>
-      </div>
-      <i>Jack Collis</i>
-    </header>
-    <footer>
-      <a href="https://www.linkedin.com/in/jack-collis/" target="_blank">
-        <img class="social" src="./res/linked_in.png" alt="LinkedIn" />
-      </a>
-    </footer>
-  </div>
+  			gtag('config', 'UA-143416986-1');
+		</script>
+		
+		<!-- Load JS Dependencies -->
+		<script src="js/jquery-3.4.1.slim.min.js"></script>
+	</head>
+
+	<body>
+		<div id="particle-container">
+
+			<div id="text-container">
+				<svg height="165" width="550" class="svg-name">
+					<text x="20" y="140" fill="rgba(23,23,23,1.00)" font-size="106">Jack Collis</text>
+				</svg>
+				<br>
+				<svg height="65" width="550">
+					<text x="70" y="40" fill="rgba(23,23,23,1.00)" font-size="46">Software Developer</text>
+				</svg>
+			</div>
+			
+		</div>
+		
+		<div id="links">
+				<a class="link-item" href="https://github.com/collis96" target="_blank">
+                	GitHub
+            	</a>
+				<a class="link-item" href="https://www.linkedin.com/in/jack-collis/" target="_blank">
+                	LinkedIn
+            	</a>
+				<a class="link-item" href="mailto:jackcollis96@gmail.com" target="_blank">
+                	Contact
+            	</a>
+		</div>
+		
+		<div id="projects-container">
+			
+			<div id="projects-inner-container">
+				<h1 class="proj-header">Projects</h1>
+				<p>
+					Here are the projects I've completed in the past and the projects I'm currently undertaking. If you are here after reading my CV you've probably read about a few already, so if you want any more information on those projects you're in the right place! 
+				</p>
+				<br>
+				
+				<h2>Conversion Toolkit</h2>
+				<span class="project-subtitle"><a href="https://play.google.com/store/apps/details?id=com.arcticumi.Conversion_Toolkit&hl=en_US" target="_blank">Download</a> - <a href="https://github.com/collis96/Unit-Conversion-Tool" target="_blank">Code</a></span>
+				<img src="img/convert-app.PNG" class="project-img" align="left" alt="conversion-toolkit-image">
+				<p>
+					The Conversion Toolkit mobile application for Android provides users with an easy-to-use "toolkit" for day to day conversions. Whether you are trying to convert Kilometers to Miles, understand the amount of Electronvolts in a Joule or see how many Indian Rupees you can get for 50 British Pounds, Conversion Toolkit can do it all!
+				</p>
+				<p>
+					While making this app, there were many challenges I had to overcome. The currency function proved to be the most challenging, for this to work I needed live data and the application would have to display this live data into something meaningful to the user. To achieve this I used xml parsing which would retrieve the relevant information needed based on user selection. With the information parsed into a linked list the application then extracts the exchange rate value needed and multiplies it with the users input.
+				</p>
+				<p>
+					While it only takes a fraction of a second to download the xml data upon request, I implemented multithreading so the application does not slow down at any point for the user.
+				</p>
+				<br>
+				
+				<h2>Simple Calculator</h2>
+				<span class="project-subtitle"><a href="https://play.google.com/store/apps/details?id=com.arcticumi.calculator&hl=en_GB" target="_blank">Download</a> - <a href="https://github.com/collis96/Calculator" target="_blank">Code</a></span>
+				<img src="img/calculator-app.PNG" class="project-img" align="left" alt="conversion-toolkit-image">
+				<p>
+					This application was a project I set myself as a first venture into Android development. I wanted to create a very easy-to-use calculator with accessiblity in mind. That's why I decided on a basic colour scheme and easy to press large buttons.
+				</p>
+			</div>
+			
+		</div>
+		
+	</body>
 </html>
