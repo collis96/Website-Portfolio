@@ -33,7 +33,7 @@ a:hover{
     text-decoration: underline;
 }
 
-#particle-container{
+#main-container{
     width:100%;
     top:0;
     left:0;
@@ -41,7 +41,6 @@ a:hover{
     max-height:1100px;
     height: 100vh;
     position:relative;
-    z-index:-10;
     background-image: url("/img/landscape.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -49,7 +48,7 @@ a:hover{
 }
 
 .name-h1{
-    
+
 }
 
 #projects-container{
@@ -72,6 +71,14 @@ a:hover{
     width:100%;
     text-align: center;
     top:120px;
+}
+
+#project-card{
+  position: relative;
+  width:100%;
+  text-align: left;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 .profile-img {
@@ -101,7 +108,7 @@ a:hover{
     width:290px;
     text-align: center;
 	background-image: linear-gradient(to right,rgba(0,0,0,0.005),rgba(0, 0, 0, 0.30));
-    
+
     border-radius: 5px;
     padding-bottom: 17px;
     padding-top:12px;
@@ -113,6 +120,26 @@ a:hover{
     z-index: 9999;
     color:rgba(66,66,66,1.00);
     text-decoration: none;
+}
+
+.link-item-small{
+	font-size:20px;
+	display: block;
+	text-align: center;
+	background-image: linear-gradient(to right,rgba(0,0,0,0.005),rgba(0, 0, 0, 0.30));
+	border-radius: 5px;
+	padding-bottom: 5px;
+	padding-top: 2px;
+	padding-right: 5px;
+	margin-bottom: 2px;
+	cursor: pointer;
+	position: relative;
+	color:rgba(23,23,23,1.00);
+	text-decoration: none;
+}
+
+.link-item-small:hover{
+
 }
 
 .link-item:hover{
@@ -182,7 +209,26 @@ h1.proj-header{
     font-size:106px;
 }
 
-#sitelytics-img{
-    width:180px;
-    border-radius: 20px;
+.bottomright {
+  position: absolute;
+  cursor: pointer;
+  z-index: 9999;
+  bottom: 8px;
+  right: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#bottomright {
+	color: black;
+	font-size: 20;
+	text-align: center;
+}
+
+
+
+.social {
+	position: relative;
+	bottom: -0.3rem;
+	padding-left: 0.5ex;
 }

@@ -7,8 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/styles.css">
 
-		<!-- Global site tag (gtag.js) - Google Analytics --> 
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143416986-1"></script> 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143416986-1"></script>
 		<script>
   			window.dataLayer = window.dataLayer || [];
   			function gtag(){dataLayer.push(arguments);}
@@ -16,13 +16,14 @@
 
   			gtag('config', 'UA-143416986-1');
 		</script>
-		
+
 		<!-- Load JS Dependencies -->
 		<script src="js/jquery-3.4.1.slim.min.js"></script>
 	</head>
 
 	<body>
-		<div id="particle-container">
+
+		<div id="main-container">
 
 			<div id="text-container">
 				<svg height="165" width="550" class="svg-name">
@@ -33,9 +34,16 @@
 					<text x="70" y="40" fill="rgba(23,23,23,1.00)" font-size="46">Software Developer</text>
 				</svg>
 			</div>
-			
+
+			<div class="bottomright">
+
+				<a class="link-item-small" href="https://www.instagram.com/jon_walland/" target="_blank">Photography by Jonathan Walland<img class="social" src="img/icons8-instagram-24.png" alt="instagram"></a>
+
+
+			</div>
+
 		</div>
-		
+
 		<div id="links">
 				<a class="link-item" href="https://github.com/collis96" target="_blank">
                 	GitHub
@@ -43,56 +51,115 @@
 				<a class="link-item" href="https://www.linkedin.com/in/jack-collis/" target="_blank">
                 	LinkedIn
             	</a>
+				<a class="link-item" href="JC_CV.pdf" target="_blank">
+                	Resume
+            	</a>
 				<a class="link-item" href="mailto:jackcollis96@gmail.com" target="_blank">
                 	Contact
             	</a>
 		</div>
-		
+
 		<div id="projects-container">
-			
+
 			<div id="projects-inner-container">
 				<h1 class="proj-header">Projects</h1>
 				<p>
-					Here are the projects I've completed in the past and the projects I'm currently undertaking. If you are here after reading my CV you've probably read about a few already, so if you want any more information on those projects you're in the right place! 
+					Here are the projects I've completed in the past and the projects I'm currently undertaking. If you are here after reading my CV you've probably seen a few already, so if you want any more information on those projects you're in the right place!
 				</p>
 				<br>
-				
-				<h2>Conversion Toolkit</h2>
-				<span class="project-subtitle"><a href="https://play.google.com/store/apps/details?id=com.arcticumi.Conversion_Toolkit&hl=en_US" target="_blank">Download</a> - <a href="https://github.com/collis96/Unit-Conversion-Tool" target="_blank">Code</a></span>
-				<img src="img/convert-app.PNG" class="project-img" align="left" alt="conversion-toolkit-image">
+
+				<div id="project-card">
+					<h2>
+						Coming Soon: Flatspace
+					</h2>
+					<span class="project-subtitle"><s>Live Demo</s> - <s>Code</s></span>
+					<img src="img/flatspace.PNG" class="project-img" align="left" alt="flatspace-image">
+					<p>
+						The aim of this project is to simulate celestial mechanics in a 2-Dimensional plane. The biggest challenge for this will be to first understand the
+						underlying physics of orbital mechanics and then translating that into code. My first intuition is going to be correctly calculating the
+						<a href="https://en.wikipedia.org/wiki/Orbital_elements" target="_blank"> oribtal elements</a> from there I should be able to plot the orbit of non-static objects.
+					</p>
+
+					<p>
+						There are many ideas of where I could take this project, when successfully implemented in 2-Dimensions it should be easy enough to implement a 3D web based version.
+						The <a href="https://threejs.org/" target="_blank"> Three.js</a> library will be helpful to make easy work of the WebGL needed.
+					</p>
+
 				<p>
-					The Conversion Toolkit mobile application for Android provides users with an easy-to-use "toolkit" for day to day conversions. Whether you are trying to convert Kilometers to Miles, understand the amount of Electronvolts in a Joule or see how many Indian Rupees you can get for 50 British Pounds, Conversion Toolkit can do it all!
+					<u>Current Progress:</u><br>
+					<br>
+					<s>- Write code to calculate orbital elements </s><br>
+					- Plot an objects orbit using orbital elements <br>
+					- Render the object moving along plot <br>
+					- Allow a user to spawn objects and modify the properties of existing objects
 				</p>
-				<p>
-					While making this app, there were many challenges I had to overcome. The currency function proved to be the most challenging, for this to work I needed live data and the application would have to display this live data into something meaningful to the user. To achieve this I used xml parsing which would retrieve the relevant information needed based on user selection. With the information parsed into a linked list the application then extracts the exchange rate value needed and multiplies it with the users input.
-				</p>
-				<p>
-					While it only takes a fraction of a second to download the xml data upon request, I implemented multithreading so the application does not slow down at any point for the user.
-				</p>
+
+				</div>
+
+				<div id="project-card">
+					<h2>
+						The Game of Life in JavaScript
+					</h2>
+					<span class="project-subtitle"><a href="../game-of-life/game-of-life.html" target="_blank">Live Demo</a> - <a href="https://github.com/collis96/Game-of-Life" target="_blank">Code</a></span>
+					<img src="img/game-of-life.PNG" class="project-img" align="left" alt="game-of-life-image">
+					<p>
+						This is another coding challenge I set myself, to recreate<a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"  target="_blank"> Conway's Game of Life</a> in JavaScript (with a few of my own additional touches).
+						The premise of the Game of Life goes as follows, there exists an inital seed of cells on a 2 by 2 grid, and 3 underpinning rules that decide whether each cell will die, reproduce or stay dormant. The board state changes constantly
+						because of these 3 simple rules and can create some quite interesting patterns.
+					</p>
+
+
+					<p>
+						<u>Fun fact:</u><br>
+						<br>
+						It has been proven that the game of life is actually a <a href="" target="_blank"> Turing Machine</a>, that is, a machine that can compute anything computable.
+					</p>
+				</div>
+
 				<br>
-				
-				<h2>Raycasting Coding Adventure</h2>
-				<span class="project-subtitle"><a href="rays.html" target="_blank">Live Demo</a> - <a href="https://github.com/collis96/Raycasting" target="_blank">Code</a></span>
-				<img src="img/raycasting.PNG" class="project-img" align="left" alt="raycasting-image">
-				<p>
-					This is a project I'm still currently working on. Currently the demo is demonstrating the properties of light rays hitting opaque wall objects. I will be adding a user menu and a 3D visuallisation of what the light is hitting at a later date. You can see the progress of it yourself by clicking the Live Demo link on the left.
-				</p>
-				<p>
-					Computer graphics are a fascinating subject that I really want to understand at a deeper level. Working with them is incredibly rewarding when you can see the progress you are making in a very visual way.
-				</p>
+
+				<div id="project-card">
+					<h2>Conversion Toolkit</h2>
+					<span class="project-subtitle"><a href="https://play.google.com/store/apps/details?id=com.arcticumi.Conversion_Toolkit&hl=en_US" target="_blank">Download</a> - <a href="https://github.com/collis96/Unit-Conversion-Tool" target="_blank">Code</a></span>
+					<img src="img/convert-app.PNG" class="project-img" align="left" alt="conversion-toolkit-image">
+					<p>
+						The Conversion Toolkit mobile application for Android provides users with an easy-to-use "toolkit" for day to day conversions. Whether you are trying to convert Kilometers to Miles, understand the amount of Electronvolts in a Joule or see how many Indian Rupees you can get for 50 British Pounds, Conversion Toolkit can do it all!
+					</p>
+					<p>
+						While making this app, there were many challenges I had to overcome. The currency function proved to be the most challenging, for this to work I needed live data and the application would have to display this live data into something meaningful to the user. To achieve this I used xml parsing which would retrieve the relevant information needed based on user selection. With the information parsed into a linked list the application then extracts the exchange rate value needed and multiplies it with the users input.
+					</p>
+					<p>
+						While it only takes a fraction of a second to download the xml data upon request, I implemented multithreading so the application does not slow down at any point for the user.
+					</p>
+				</div>
+
 				<br>
-				
-				<h2>Simple Calculator</h2>
-				<span class="project-subtitle"><a href="https://play.google.com/store/apps/details?id=com.arcticumi.calculator&hl=en_GB" target="_blank">Download</a> - <a href="https://github.com/collis96/Calculator" target="_blank">Code</a></span>
-				<img src="img/calculator-app.PNG" class="project-img" align="left" alt="calculator-app-image">
-				<p>
-					This application was a project I set myself as a first venture into Android development. I wanted to create a very easy-to-use calculator with accessiblity in mind. That's why I decided on a basic colour scheme and easy to press large buttons.
-				</p>
-				
-				
+
+				<div id="project-card">
+					<h2>Raycasting Coding Adventure</h2>
+					<span class="project-subtitle"><a href="rays.html" target="_blank">Live Demo</a> - <a href="https://github.com/collis96/Raycasting" target="_blank">Code</a></span>
+					<img src="img/raycasting.PNG" class="project-img" align="left" alt="raycasting-image">
+					<p>
+						For this coding challenge I wanted to simulate light at a very simple level, hitting opaque wall objects and not bouncing. While not very useful, it IS nice to look at. Take a look by clicking <a href="rays.html" target="_blank">here</a>.
+					<p>
+					</p>
+					<p>
+						Computer graphics are a fascinating subject that I really want to understand at a deeper level. Working with them is incredibly rewarding when you can see the progress you are making in a visual way.
+					</p>
+				</div>
+
+				<br>
+
+				<div id="project-card">
+					<h2>Simple Calculator</h2>
+					<span class="project-subtitle"><a href="https://play.google.com/store/apps/details?id=com.arcticumi.calculator&hl=en_GB" target="_blank">Download</a> - <a href="https://github.com/collis96/Calculator" target="_blank">Code</a></span>
+					<img src="img/calculator-app.PNG" class="project-img" align="left" alt="calculator-app-image">
+					<p>
+						This application was a project I set myself as a first venture into Android development. I wanted to create a very easy-to-use calculator with accessiblity in mind. That's why I decided on a basic colour scheme and easy to press large buttons.
+					</p>
+
+				</div>
 			</div>
-			
 		</div>
-		
 	</body>
 </html>
