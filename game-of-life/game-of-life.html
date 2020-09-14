@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<title>Game of Life</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Game of Life">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<script type="text/javascript" src="p5.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="model/cell.js"></script>
+	<script type="text/javascript" src="view/mainView.js"></script>
+	<script type="text/javascript" src="controller/mainController.js"></script>
+	<script type="text/javascript" src="model/mainModel.js"></script>
+
+	<h1>Conway's Game of Life - <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">wiki</a></h1>
+
+	<div id="rules">
+		<p><b>Reproduction</b>: Any dead cell with exactly three live neighbours becomes a live cell.</p>
+		<p><b>Underpopulation</b>: Any live cell with fewer than two live neighbours dies.</p>
+		<p><b>Overpopulation</b>: Any live cell with more than three live neighbours dies.</p>
+		<p><b>Survival</b>: Any live cell with two or three live neighbours lives on to the next generation.</p>
+	</div>
+
+	<div id="about">
+		<p><b>Refresh the page</b> to try a new random game seed.</p>
+		<p><b>Click anywhere</b> to pause and unpause the game.</p>
+	</div>
+
+</body>
+
+</html>

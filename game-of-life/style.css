@@ -1,0 +1,21 @@
+html, body {
+  margin: 1em;
+  padding: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  padding-bottom: 2em;
+}
+
+#about {
+  margin-block-end: 1em;
+  font-size: 15px;
+}
+
+#rules{
+  margin-block-end: 1.5em;
+  font-size: 15px;
+}
