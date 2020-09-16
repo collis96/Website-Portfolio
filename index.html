@@ -35,13 +35,6 @@
 				</svg>
 			</div>
 
-			<div class="bottomright">
-
-				<a class="link-item-small" href="https://www.instagram.com/jon_walland/" target="_blank">Photography by Jonathan Walland<img class="social" src="img/icons8-instagram-24.png" alt="instagram"></a>
-
-
-			</div>
-
 		</div>
 
 		<div id="links">
@@ -59,42 +52,18 @@
             	</a>
 		</div>
 
-		<div id="projects-container">
+		<div id="shortcuts">
+			<span><a class="shortcut-item" href="#completed-projects">Finished Projects</a><a class="shortcut-item" href="#ongoing-projects">Ongoing Projects</a></span>
+		</div>
 
+		<div id="projects-container">
+			<div id="completed-projects">
 			<div id="projects-inner-container">
-				<h1 class="proj-header">Projects</h1>
+				<h1 class="proj-header">Finished Projects</h1>
 				<p>
 					Here are the projects I've completed in the past and the projects I'm currently undertaking. If you are here after reading my CV you've probably seen a few already, so if you want any more information on those projects you're in the right place!
 				</p>
 				<br>
-
-				<div id="project-card">
-					<h2>
-						Coming Soon: Flatspace
-					</h2>
-					<span class="project-subtitle"><s>Live Demo</s> - <s>Code</s></span>
-					<img src="img/flatspace.PNG" class="project-img" align="left" alt="flatspace-image">
-					<p>
-						The aim of this project is to simulate celestial mechanics in a 2-Dimensional plane. The biggest challenge for this will be to first understand the
-						underlying physics of orbital mechanics and then translating that into code. My first intuition is going to be correctly calculating the
-						<a href="https://en.wikipedia.org/wiki/Orbital_elements" target="_blank"> oribtal elements</a> from there I should be able to plot the orbit of non-static objects.
-					</p>
-
-					<p>
-						There are many ideas of where I could take this project, when successfully implemented in 2-Dimensions it should be easy enough to implement a 3D web based version.
-						The <a href="https://threejs.org/" target="_blank"> Three.js</a> library will be helpful to make easy work of the WebGL needed.
-					</p>
-
-				<p>
-					<u>Current Progress:</u><br>
-					<br>
-					<s>- Write code to calculate orbital elements </s><br>
-					- Plot an objects orbit using orbital elements <br>
-					- Render the object moving along plot <br>
-					- Allow a user to spawn objects and modify the properties of existing objects
-				</p>
-
-				</div>
 
 				<div id="project-card">
 					<h2>
@@ -159,7 +128,52 @@
 					</p>
 
 				</div>
+
+		<div id="ongoing-projects">
+			<h1 class="proj-header">Ongoing Projects</h1>
+
+			<div id="project-card">
+				<h2>Coming Soon: My Squad Builder</h2>
+					<span class="project-subtitle"><a href="https://mysquadbuilder.herokuapp.com/" target="_blank">Live Demo</a> - <a href="https://github.com/collis96/My-Squad-Builder" target="_blank">Code</a></span>
+				<img src="img/mysquadbuilder.PNG" class="project-img" align="left" alt="mysquadbuilder-image">
+				<p>
+					This is a Node.JS & MySQL project which will allow users to add players to a database and view their stats while also being able to edit and/or delete players.
+				</p>
+				<p>
+					Disclaimer: This is a work in progress and as such the <a href="https://mysquadbuilder.herokuapp.com/" target="_blank">Live Demo</a> may be temperamental.
+
 			</div>
+
+			<div id="project-card">
+				<h2>
+					Coming Soon: Flatspace
+				</h2>
+				<br>
+				<img src="img/flatspace.PNG" class="project-img" align="left" alt="flatspace-image">
+				<p>
+					The aim of this project is to simulate celestial mechanics in a 2-Dimensional plane. The biggest challenge for this will be to first understand the
+					underlying physics of orbital mechanics and then translating that into code. My first intuition is going to be correctly calculating the
+					<a href="https://en.wikipedia.org/wiki/Orbital_elements" target="_blank"> oribtal elements</a> from there I should be able to plot the orbit of non-static objects.
+				</p>
+
+				<p>
+					There are many ideas of where I could take this project, when successfully implemented in 2-Dimensions it should be easy enough to implement a 3D web based version.
+					The <a href="https://threejs.org/" target="_blank"> Three.js</a> library will be helpful to make easy work of the WebGL needed.
+				</p>
+
+			<p>
+				<u>Current Progress:</u><br>
+				<br>
+				<s>- Write code to calculate orbital elements </s><br>
+				- Plot an objects orbit using orbital elements <br>
+				- Render the object moving along plot <br>
+				- Allow a user to spawn objects and modify the properties of existing objects
+			</p>
+
+			</div>
+		</div>
+		</div>
+		</div>
 		</div>
 	</body>
 </html>

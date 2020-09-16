@@ -2,6 +2,7 @@ html, body {
     font-family: 'Exo 2', sans-serif;
     padding: 15px;
     color:#181818;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -38,13 +39,13 @@ a:hover{
     top:0;
     left:0;
     min-height:820px;
-    max-height:1100px;
+    max-height:1300px;
     height: 100vh;
     position:relative;
-    background-image: url("/img/landscape.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: rgba(0,0,0,1.00);
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 75%,rgba(255,255,255,1)), url("/img/landscape.jpg");
+	  background-repeat: no-repeat;
+    background-size: cover;
+	  color: rgba(0,0,0,1.00);
 }
 
 .name-h1{
@@ -102,13 +103,40 @@ a:hover{
     color:#fff;
 }
 
+#shortcuts{
+  position: absolute;
+  top:750px;
+  text-align: center;
+  width:100%;
+  color:#fff;
+}
+
+.shortcut-item{
+  font-size:30px;
+  display: inline-block;
+  width:400px;
+  text-align: center;
+  background-image: linear-gradient(to right,rgba(0,0,0,0.005),rgba(0, 0, 0, 0.30));
+  border-radius: 5px;
+  padding-bottom: 17px;
+  padding-top:12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13px;
+  cursor:pointer;
+  position: relative;
+  z-index: 9999;
+  color:rgba(66,66,66,1.00);
+  text-decoration: none;
+}
+
+
 .link-item{
     font-size:30px;
     display: block;
     width:290px;
     text-align: center;
-	background-image: linear-gradient(to right,rgba(0,0,0,0.005),rgba(0, 0, 0, 0.30));
-
+	  background-image: linear-gradient(to right,rgba(0,0,0,0.005),rgba(0, 0, 0, 0.30));
     border-radius: 5px;
     padding-bottom: 17px;
     padding-top:12px;
@@ -150,6 +178,14 @@ a:hover{
     transition: background-color 200ms linear;
 }
 
+.shortcut-item:hover{
+  text-decoration: none;
+  background-color: rgba(65,65,65,0.10);
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
 h2{
     font-family: arial;
     letter-spacing: -1px;
@@ -180,6 +216,14 @@ h1.proj-header{
     width:100%;
     margin-bottom:20px;
     margin-left:30px;
+}
+
+.shortcut-span{
+  font-style: italic;
+  display: inline-block;
+  width:100%;
+  margin-bottom:20px;
+  margin-left:30px;
 }
 
 
